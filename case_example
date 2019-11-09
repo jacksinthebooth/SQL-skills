@@ -1,0 +1,8 @@
+/* case example within a search query */
+SELECT modal_text,
+  COUNT(DISTINCT CASE
+    WHEN ab_group = 'control' THEN user_id
+    END) AS 'control_clicks'
+FROM onboarding_modals
+GROUP BY 1
+ORDER BY 1;
