@@ -15,3 +15,8 @@ SELECT january.user_id FROM january
 LEFT JOIN february
 ON january.user_id = february.user_id
 WHERE february.user_id IS NULL;
+
+/*Basic Format fo the Cross Join*/
+SELECT *
+FROM table1
+CROSS JOIN table2;
